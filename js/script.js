@@ -3,18 +3,47 @@ var t = 1000;
 
 $(document).ready(function(){
 
+	//nav toggle
+
+	$('.fa-bars').click(function(){
+		$('.nav').toggle();
+	});
+
+	//make nav disappear when clicking anywhere on screen
+
+
 	display_projects('display_projects');
 	display_experience('display_experience');
 	display_awards('display_awards');
 	display_skills('display_skills');
 	display_contact('display_contact');
-	section_handler();
-
-	//change bg
+	
+	//change bg in response to scrolling to different sections
 	$(window).scroll(function(){
 		section_handler();
 	});
 
+	projects_handler();
+	skills_handler();
+	header_handler();
+
+});
+
+var skills_handler = function(){
+	//expand stars upon hover:
+	$('.skill').mouseenter(function(){
+		$(this).children('.text-right').children('.filled-star').animate({
+			"margin-right":"5px"
+		}, t/4);
+	});
+	$('.skill').mouseleave(function(){
+		$(this).children('.text-right').children('.filled-star').animate({
+			"margin-right":"0px"
+		}, t/4);
+	});
+}
+
+var projects_handler = function(){
 	//hover effect for project details
 	$('.project').mouseenter(function(){
 		$(this).children('.details').stop();
@@ -45,7 +74,6 @@ $(document).ready(function(){
 		$(this).children('.details').children('.view-options').animate({
 			bottom: '0px'
 		}, t);
-
 	});
 
 	$('.project').mouseleave(function(){
@@ -74,23 +102,16 @@ $(document).ready(function(){
 			bottom: '-500px'
 		}, t);
 	});
+}
 
-	//expand stars upon hover:
-	$('.skill').mouseenter(function(){
-		$(this).children('.text-right').children('.filled-star').animate({
-			"margin-right":"5px"
-		}, t/4);
-	});
-	$('.skill').mouseleave(function(){
-		$(this).children('.text-right').children('.filled-star').animate({
-			"margin-right":"0px"
-		}, t/4);
-	});
+var header_handler = function(){
 
-	//arrow hover effect
+	arrow_hover();
+}
+
+var arrow_hover = function(){
 	hover_down();
-
-});
+}
 
 var hover_down = function(){
 	$('.fa-angle-down').animate({
@@ -113,7 +134,6 @@ var remove_classes = function(){
 };
 
 var section_handler = function(){
-
 	var distance_to_summary = $('header')[0].scrollHeight,
 	distance_to_projects = distance_to_summary + $('#summary')[0].scrollHeight, 
 	distance_to_experience = distance_to_projects + $('#projects')[0].scrollHeight,
@@ -127,7 +147,6 @@ var section_handler = function(){
 	var in_awards = $(this).scrollTop() >= distance_to_awards;
 	var in_skills = $(this).scrollTop() >= distance_to_skills;
 	var in_contact = $(this).scrollTop() >= distance_to_contact;
-
 
 	if(in_contact){
 		remove_classes();
@@ -171,8 +190,6 @@ var section_handler = function(){
 		$('.back-to-top').css("display", "none");	
 	}
 };
-
-
 
 
 /*only works on header, scrollAmount needs to be recalculated for each section*/
@@ -232,9 +249,7 @@ var display_projects = function(div_id){
 						+ '<i class  = "fa fa-code"></i><p>View Code</p>'
 					+ '</div></a>'
 				+'</div>';	
-
 		out += "</div></div></div></div>";
-
 		document.getElementById(div_id).innerHTML += out;
 	}
 };
@@ -268,22 +283,13 @@ var display_experience = function(div_id){
 			out += '<li>' + bullet_points[j].bullet + '</li>';
 		}
 		out += '</ul>';
-
-		out += '<p class = "work_location"><i class = "fa fa-map-marker"></i> ' + loc;
-		if(link != ""){
-			out += ' | <a href = "' + link + '" target = "blank" <i class = "fa fa-link"></i> ' + link + '</a></p>';
-		} else {
-			out += '</p>'
-		}
+		out += '<p class = "work_location"><i class = "fa fa-map-marker"></i> ' + loc + '</p>';
 		out += '</div>';
-
 		out += '</div>';
 
 		document.getElementById(div_id).innerHTML += out;
 	}
 };
-
-
 
 var display_awards = function(div_id){
 	var out = '<ul class="timeline">';
@@ -321,33 +327,6 @@ var display_awards = function(div_id){
 
 };
 
-var display_awards0 = function(div_id){
-	for(var i = 0; i < awards.length; i++){
-		var award = awards[i].award,
-		place = awards[i].place,
-		date = awards[i].date;
-
-		var out = '<div class = "row">';
-		if(i % 2 === 1){
-			out += '<div class = "col-md-5"></div>';
-		}
-
-		out += '<div class = "col-md-7">';
-
-		out += '<div class = "award">';
-
-		out += '<h3 class = "white">' + award + '</h3>';
-		out += '<p>' + date;
-		out += ' | <i class = "fa fa-map-marker"></i> ' + place + '</p>';
-
-		out += '</div>';//close award
-		out += '<div>';//close column
-		out += '</div>';//close row
-
-		document.getElementById(div_id).innerHTML += out;
-	}
-};
-
 var display_skills = function(div_id){
 	var half = "<div class = 'col-md-6'>",
 	full = "<div class = 'col-md-12'>"
@@ -382,7 +361,7 @@ var display_skills = function(div_id){
 			}
 			stars_field += "</div>";
 
-			var row = "<div class = 'col-md-12 skill'>";
+			var row = "<div class = 'col-md-12 col-sm-12 skill'>";
 			row += skill_field + stars_field;
 			row += "</div>";
 

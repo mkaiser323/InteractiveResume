@@ -4,12 +4,6 @@ var bg = {
 	"awards":'img/awards.jpg'
 };
 
-var bg0 = {
-	"header":"https://upload.wikimedia.org/wikipedia/commons/2/21/Earthlights_dmsp.jpg",
-	"projects":"http://img15.deviantart.net/177b/i/2014/084/d/8/web_developer_wallpaper__code__by_plusjack-d7bmt54.jpg",
-	"awards":'https://static.pexels.com/photos/7042/pexels-photo.jpeg'
-};
-
 var contact = [
 	{
 		"icon":"fa fa-github-square",
@@ -39,28 +33,22 @@ var skills = [
 				"stars":5
 			},{
 				"skill":"JavaScript",
-				"stars":3
+				"stars":4
 			},{
 				"skill":"JQuery",
-				"stars":3
+				"stars":4
 			},{
 				"skill":"Bootstrap",
-				"stars":4
+				"stars":5
 			},{
 				"skill":"JSON",
-				"stars":4
+				"stars":5
 			},{
 				"skill":"XML",
 				"stars":4
 			},{
 				"skill":"Meteor.js",
 				"stars":2
-			},{
-				"skill":"PHP",
-				"stars":1
-			},{
-				"skill":"Ruby",
-				"stars":1
 			}
 		]
 	},{
@@ -69,12 +57,6 @@ var skills = [
 			{
 				"skill":"Java",
 				"stars":4
-			},{
-				"skill":"C++",
-				"stars":1
-			},{
-				"skill":"C",
-				"stars":1
 			}
 		]
 	},{
@@ -96,13 +78,13 @@ var skills = [
 
 var awards = [
 	{
-		"award":"Presidential Scholar Award for Outstanding Academic Achievement",
+		"award":"Winnner of the NSBE Hackathon Sponsored by IBM, Facebook, Pandora & Goldman Sachs",
 		"place":"Lehman College",
-		"date":"Spring 2015"
+		"date":"October 2015"
 	},{
 		"award":"Presidential Scholar Award for Outstanding Academic Achievement",
 		"place":"Lehman College",
-		"date":"Fall 2014"
+		"date":"Fall 2014 <br> to <br> Spring 2015"
 	},{
 		"award":"Herbert H. Lehman Leadership Certificate",
 		"place":"Lehman College",
@@ -120,6 +102,30 @@ var awards = [
 
 var experience = [
 	{
+		"position":"Web Development Intern",
+		"date":"October 2015 - Present",
+		"place":"Electifi",
+		"details":"Currently working on the web site for a new startup company",
+		"bullet_points":[],
+		"loc":"Bronx, NY",
+	},{
+		"position":"Research Assistant",
+		"date":"October 2014 - Present",
+		"place":"CUNY-Lehman College",
+		"details":"Currently working on problems surrounding mathematical representations of distributions of phylogenetic trees in treespace",
+		"bullet_points":[],
+		"loc":"Bronx, NY",
+	},{
+		"position":"Founding Officer & VP of Social Media",
+		"date":"September 2014 - May 2015",
+		"place":"National Society of Collegiate Scholars",
+		"details":"I helped two of my friends establish the Lehman College chapter of the NSCS. My responsibilities included:",
+		"bullet_points":[
+			{"bullet":"Maintaining detailed records of club activity to aid in publicity, recruitment and officer transitions"},
+			{"bullet":"Increasing the club's online visibility by promoting and marketing events on Social Media"}
+		],
+		"loc":"Bronx, NY",
+	},{
 		"position":"Computer Lab Assistant",
 		"date":"January 2011 - May 2012",
 		"place":"Fordham University",
@@ -129,18 +135,6 @@ var experience = [
 			{"bullet":"During the summer, I successfully disassembled 120 old computers and assembled and configured new replacements in time for the Spring semester deadline"}
 		],
 		"loc":"Bronx, NY",
-		"link":""
-	},{
-		"position":"Founding Officer & VP of Social Media",
-		"date":"September 2014 - Present",
-		"place":"National Society of Collegiate Scholars",
-		"details":"I helped two of my friends establish the Lehman College chapter of the NSCS. My responsibilities included:",
-		"bullet_points":[
-			{"bullet":"Maintaining detailed records of club activity to aid in publicity, recruitment and officer transitions"},
-			{"bullet":"Increasing the club's online visibility by promoting and marketing events on Social Media"}
-		],
-		"loc":"Bronx, NY",
-		"link":"https://www.facebook.com/nscs.lehman"
 	}
 ];
 
