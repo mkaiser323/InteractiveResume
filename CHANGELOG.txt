@@ -1,0 +1,52 @@
+version 12:
+changes:
+
+*add new experience - done
+-electifi
+-research
+-order them recent-old
+
+*add new project - postponed for after it's mobile friendly
+-hackathon
+-since I can't put a link to the code or project, i need a detailed description of what I did
+-this can be done by putting a scrollbar in the project window
+
+*change logo
+-remove shadow from header
+-change logo 
+-change favicon
+
+*organize - done
+--organize code, delete unused items - done
+----organize css - done
+----organize js - done
+----organize html - done
+--delete unused files - done
+
+
+*Make it mobile-friendly
+-navigation
+--collapse to hamburger menu - done
+
+-bg img
+--center and set min width of image x done
+---used media query to change to smaller image instead
+
+-header
+--vertically center text x done
+---text and arrow has also been resized
+
+-summary
+--center all text - done
+
+-experience - done
+--remove vertical pipe and link icon 
+
+-projects
+--for mobile version, put description under the photo and put title over the photo
+
+-awards
+
+-skills
+--align stars properly
+-contact
