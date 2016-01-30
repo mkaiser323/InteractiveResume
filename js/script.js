@@ -283,7 +283,12 @@ var display_experience = function(div_id){
 			out += '<li>' + bullet_points[j].bullet + '</li>';
 		}
 		out += '</ul>';
-		out += '<p class = "work_location"><i class = "fa fa-map-marker"></i> ' + loc + '</p>';
+		out += '<p class = "work_location"><i class = "fa fa-map-marker"></i> ' + loc;
+		if(link != ""){
+			out += ' | <a href = "' + link + '" target = "blank" <i class = "fa fa-link"></i> ' + link + '</a></p>';
+		} else {
+			out += '</p>'
+		}
 		out += '</div>';
 		out += '</div>';
 

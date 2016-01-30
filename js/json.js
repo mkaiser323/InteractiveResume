@@ -105,7 +105,7 @@ var experience = [
 		"position":"Web Developer",
 		"date":"December 2015 - Present",
 		"place":"The International Center for Climate Change Impact Studies",
-		"details":"Currently developing a wordpress web site for a newly established environmental organization",
+		"details":"Currently developing a Wordress web site for a newly established environmental organization",
 		"bullet_points":[],
 		"loc":"Bronx, NY",
 		"link":"http://climate-change-impact-studies.org"
@@ -121,9 +121,9 @@ var experience = [
 		"position":"Mathematics Researcher & Programmer",
 		"date":"October 2014 - January 2016",
 		"place":"CUNY-Lehman College",
-		"details":"Worked on open problems on CAT 0 space with direct application to mapping optimal evolutionary history in phylogenetic trees",
+		"details":"Worked on open problems on CAT(0) space with direct application to mapping optimal evolutionary history in phylogenetic trees",
 		"bullet_points":[
-			{"bullet":"Worked in teams to come up with algorithms to compute shortest paths in CAT 0 space"},
+			{"bullet":"Worked in teams to come up with algorithms to compute shortest paths in CAT(0) space"},
 			{"bullet":"Wrote python code to implement proposed solutions"}
 		],
 		"loc":"Bronx, NY",
