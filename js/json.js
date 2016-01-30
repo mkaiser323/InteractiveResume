@@ -102,19 +102,32 @@ var awards = [
 
 var experience = [
 	{
-		"position":"Web Development Intern",
+		"position":"Web Developer",
+		"date":"December 2015 - Present",
+		"place":"The International Center for Climate Change Impact Studies",
+		"details":"Currently developing a wordpress web site for a newly established environmental organization",
+		"bullet_points":[],
+		"loc":"Bronx, NY",
+		"link":"http://climate-change-impact-studies.org"
+	},{
+		"position":"Web Developer",
 		"date":"October 2015 - Present",
 		"place":"Electifi",
-		"details":"Currently working on the web site for a new startup company",
+		"details":"Currently working on the landing page for a startup",
 		"bullet_points":[],
 		"loc":"Bronx, NY",
+		"link":"http://electifi.com/landingNotDone"
 	},{
-		"position":"Research Assistant",
-		"date":"October 2014 - Present",
+		"position":"Mathematics Researcher & Programmer",
+		"date":"October 2014 - January 2016",
 		"place":"CUNY-Lehman College",
-		"details":"Currently working on problems surrounding mathematical representations of distributions of phylogenetic trees in treespace",
-		"bullet_points":[],
+		"details":"Worked on open problems on CAT 0 space with direct application to mapping optimal evolutionary history in phylogenetic trees",
+		"bullet_points":[
+			{"bullet":"Worked in teams to come up with algorithms to compute shortest paths in CAT 0 space"},
+			{"bullet":"Wrote python code to implement proposed solutions"}
+		],
 		"loc":"Bronx, NY",
+		"link":""
 	},{
 		"position":"Founding Officer & VP of Social Media",
 		"date":"September 2014 - May 2015",
@@ -125,6 +138,7 @@ var experience = [
 			{"bullet":"Increasing the club's online visibility by promoting and marketing events on Social Media"}
 		],
 		"loc":"Bronx, NY",
+		"link":""
 	},{
 		"position":"Computer Lab Assistant",
 		"date":"January 2011 - May 2012",
@@ -135,6 +149,7 @@ var experience = [
 			{"bullet":"During the summer, I successfully disassembled 120 old computers and assembled and configured new replacements in time for the Spring semester deadline"}
 		],
 		"loc":"Bronx, NY",
+		"link":""
 	}
 ];
 
